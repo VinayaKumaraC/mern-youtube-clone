@@ -1,0 +1,25 @@
+{
+  "name": "mern-youtube-clone",
+  "version": "1.0.0",
+  "description": "A full-stack YouTube clone built with MERN stack",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\""
+  },
+  "keywords": [
+    "youtube",
+    "mern",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "VinayaKumaraC",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
